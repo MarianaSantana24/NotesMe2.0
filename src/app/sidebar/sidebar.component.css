@@ -1,0 +1,76 @@
+.sidebar {
+  /* Estilos da barra lateral quando fechada */
+  display: flex;
+  flex-direction: column;
+  width: 20px; /* Ajuste esta largura conforme necessário */
+  height: 300px; /* Ajuste esta altura conforme necessário */
+  color: white;
+  overflow: hidden;
+  transition: width 0.3s ease; /* Adicionando uma transição suave */
+}
+
+
+.menu-icon {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Alinha o ícone no canto superior esquerdo */
+  cursor: pointer;
+  position: absolute; /* Posicionamento absoluto no canto superior esquerdo */
+  top: 14px; /* Distância do topo */
+  left: 15px; /* Distância da esquerda */
+}
+
+.menu-icon svg {
+  width: 35px;
+  height: 35px;
+  fill: #333333; /* Cor padrão do ícone */
+  margin-top: 0;
+}
+
+.menu-icon svg.open {
+  fill: #FFFFFF; /* Cor do ícone quando a barra lateral está aberta */
+}
+
+
+.sidebar.open {
+  /* Estilos da barra lateral quando aberta */
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  transition: width 0.3s ease;
+  height: 270px;
+  background-color: #333333;
+  color: white;
+}
+
+.sidebar ul {
+  margin-top: 60px;
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center; /* Alinha o ícone verticalmente com o texto */
+}
+
+.sidebar li svg {
+  width: 28px;
+  height: 28px;
+  margin-left: 15px; /* Adiciona um espaçamento à direita do ícone */
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: white;
+  font-size: 21px;
+  margin-left: 15px; /* Adiciona espaçamento entre o ícone e o texto */
+}
+
+.sidebar li:hover {
+  background-color: #555555;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+  height: 40px;
+}

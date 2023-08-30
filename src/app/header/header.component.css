@@ -1,0 +1,29 @@
+nav {
+  display: flex;
+  align-items: center; /* Centraliza verticalmente os itens */
+  justify-content: space-between; /* Espaça os itens igualmente na linha */
+}
+
+.search-container {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  padding-left: 210px;
+}
+
+.search-container input[type="text"] {
+  border: none;
+  width: 930px;
+  padding: 15px;
+  border-radius: 15px 0 0 15px;
+background: rgba(28, 28, 34, 0.09);
+}
+
+.search-container button {
+  padding: 15px 25px;
+  background-color: #333;
+  color: white;
+  border-radius: 0 15px 15px 0;
+  cursor: pointer;
+  border: none;
+}

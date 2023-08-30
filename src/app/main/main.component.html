@@ -1,0 +1,11 @@
+<div class="icon-container" (click)="goToCriarNotaComponent()">
+  <svg xmlns="http://www.w3.org/2000/svg" width="66" height="66" fill="currentColor" class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
+    <path d="M8 0a8 8 0 1 0 8 8A8 8 0 0 0 8 0zm-.5 4.5a.5.5 0 0 1 .5.5v3.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7 8.293V4a.5.5 0 0 1 .5-.5z"/>
+  </svg>
+</div>
+
+<app-nota></app-nota>
+
+<div *ngFor="let nota of listaNotas">
+  <app-nota [nota]="nota"></app-nota>
+</div>
